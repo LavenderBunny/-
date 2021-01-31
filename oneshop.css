@@ -1,0 +1,777 @@
+/* 时间：2020.1.19-2020.1.28 [不含周末] 本页制作人：bunny  项目来源：某线上直播课 */
+
+
+
+/* 去除所有所有的标签的内边距，外边距，需要的时候手动添加 */
+body *{
+	margin: 0;
+	padding: 0;
+}
+/* 对无序列表，有序列表，做一个整体样式 ，去除列表样式 */
+ul,li,ol{
+	list-style: none;
+}
+
+/* 头部 */
+#head{
+	height: 35px;
+	line-height: 35px;
+	background:linear-gradient(to bottom, #d1d1d1,  #f4f4f4, #f5f5f5);
+	padding: 2px 10%;
+	font-size: 12px;
+	color: #555555;
+}
+#head .left{
+	float: left;
+}
+#head .right{
+	float: right;
+}
+#head .left,#head .right{
+	display: inline-block;
+}
+
+/* 头部右边的span ,img  垂直居中 */
+#head .right  span,#head .right   img{
+	vertical-align: middle;
+}
+
+/* 免费注册字体颜色 */
+#head #regist{
+	color: #FF4E00;
+}
+/* 分割线的左右间距 */
+#head .sub-str{
+	margin: 0 5px;
+}
+/* 图片之间的间距 */
+#head .right img{
+	margin: 0 2px;
+}
+
+#kehufuwu{
+	/*将标签变为行内块 */
+	display: inline-block;
+	/* 相对定位 */
+	position: relative;
+}
+#kehufuwu:hover #kehumebu{
+	/* 鼠标移至客户服务，显示二级菜单 */
+	display: block;
+}
+
+#kehumebu{
+	/* 绝对定位 */
+	position: absolute;
+	/* 左边偏移量 */
+	left: -17px;
+	border: 1px solid #808080;
+	background-color: white;
+	width: 100px;
+	padding: 10px;
+	/* 文字水平居中 */
+	text-align: center;
+	/* 默认影藏 */
+	display: none;
+	z-index: 99;
+}
+
+/* 购物车样式 */
+#chart{
+	/* 行内块 */
+	display: inline-block;
+	background-color: #f6f6f6;
+	border: 1px solid #D9D9D9;
+	width: 120px;
+	height: 38px;
+	line-height: 38px;
+	/* 相对定位 */
+	position: relative;
+	left: 33px;
+	top: -21px;
+	/* 文本居中 */
+	text-align: center;
+}
+/* 购物车的详情 */
+#cart-detail{
+	/* 绝对定位 */
+	position: absolute;
+	/* 显示的层级，需要定位配合使用 */
+	z-index: 99;
+	/* 默认隐藏 */
+	display: none;
+	right: 0px;
+}
+#cart-detail img{
+	/* 宽度 */
+	width: 300px;
+}
+#chart:hover #cart-detail{
+	display: block;
+}
+#cart-span{
+	margin-left: 15px;
+}
+
+/* 超链接默认样式 */
+a{
+	/* 字体颜色 */
+	color: #555555;
+	/* 去除字体下划线 */
+	text-decoration: none;
+}
+a:hover{
+	color: #FF4E00;
+}
+
+#search-logo .left ,#search-logo .right{
+	display: inline-block; /* 上下两个div 变成左右的 (div 变成行内块的标签) */
+}
+
+/* 搜索输入框 */
+#search-text{
+	/* 给输入框加上像素为2px的红色的边框 */
+	border: 2px solid red;
+	/* 输入框的宽度 */
+	width: 500px;
+	/* 输入框的高度 */
+	height: 30px;
+}
+/* 搜索的按钮 */
+#search-button{
+	/* 按钮的字体颜色 */
+	color: white;
+	/* 按钮的背景颜色 */
+	background-color: red;
+	/* 按钮的边框颜色 */
+	border: 2px solid red;
+	/* 宽度 */
+	width: 100px;
+	/* 高度 */
+	height: 35px;
+}
+
+/* 最近搜索 */
+#search-a a{
+	/* 字体的颜色 */
+	color: gray;
+	/* 去除文字的下划线 */
+	text-decoration: none;
+	/* 最近搜索关键的右边的间距 */
+	margin-right: 20px;
+	/* 最近搜索关键的 上面的间距 */
+	display: inline-block;
+	margin-top: 10px;
+}
+/* 将鼠标放在搜索关键字上的样式  hover：悬停*/
+#search-a a:hover{
+	/* 字体的颜色 */
+	color:red;
+}
+
+/* 搜索框右边的盒子 */
+/* 解决了搜索框和按钮之间的距离 */
+/* 自动换行的标间之间放置一个字符的距离 */
+#search-logo .right{
+	/* 字体大小 */
+	font-size: 0;
+}
+
+
+
+/* 全部分类 */
+#all-goof-type li{
+	/* 去除无序列表的黑点 */
+	list-style: none;
+	/* 宽度 */
+	 width: 200px; 
+	/* 高度 */
+	height: 40px;
+	/* 行高 */
+	line-height: 40px;
+	/* 字体的大小 */
+	font-size: 16px;
+	/* 左边距 */
+	padding-left: 10px;
+	/* 防止二级菜单，被标签标签覆盖 */
+	position: relative;
+	z-index: 99;
+	/* 上边距 */
+	padding-top: 2px;
+	
+}
+#main-box .bottom{
+	position: relative;
+	top: 12px;
+}
+#main-box  .top{
+	position: relative;
+	bottom: 3px;
+}
+#main-box .top a{
+	position: relative;
+	top: 12px;
+}
+/* 全部商品分类 */
+#all-good-li{
+	/* 背景色 */
+	background-color: #ff3c3c;
+	/* 字体颜色 */
+	color: white;
+	
+}
+/* 详情分类 */
+.all-good-item{
+	/* 背景色 */
+	background-color: #b01d1d;
+	/* 字体颜色 */
+	color: white;
+	/* 鼠标放上只有变化的时间  动画*/
+	transition: all 0.5s;
+	
+}
+/* 分类前面的图片的样式 */
+.all-good-item .img-nav{
+	width: 15px;
+	height: 15px;
+	/* 右边距 */
+	margin-right: 5px;
+}
+
+/* 分类的箭头图片 */
+.all-good-item .img-narrow{
+	/* 图片放在li 最右边 */
+	float: right;
+	/* 相对于原来的位置进行定位 */
+	position: relative;
+	right: 20px;
+	top: 15px;
+}
+
+/* 鼠标放在分类的上面样式 :悬停*/
+.all-good-item:hover{
+	/* x轴平移20px */
+	transform: translate(20px, 0);
+	/* 背景色 */
+	background-color: white;
+	color: red;
+}
+
+
+
+.all-good-item{
+	/* 为子标签进行绝对定位 */
+	position: relative;
+}
+
+#second-menu{
+	/* 隐藏二级菜单 */
+	 display: none;
+	/* 需要根据父级盒子，进行绝对定位 */
+	position: absolute;
+	/* 距离我父级盒子左边，250px */
+	left: 250px;
+	top: 0px;
+	background-color: white;
+	z-index: 99;
+}
+#second-menu img{
+	width: 800px;	
+}
+
+/* 当鼠标放置分类上，显示二级菜单 */
+.all-good-item:hover #second-menu{
+	
+	display: block;
+	/* x  轴，y  轴  ，z 轴 */   /* --  父类的标签,必须是定位position */
+	z-index: 99;
+}
+
+
+
+/* .top , #banner-box ,#mesg-box{
+	border: 1px solid red ;
+} */
+
+/* 将全部分类，轮播，快讯 变成左右放置 */
+#all-goof-type ,#main-box,
+#banner-box,#mesg-box{
+	display: inline-block;
+}
+/* 轮播图片的下标样式 */
+#num-box span{
+	/* 行内块 */
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	/* 行高 */
+	line-height: 30px;
+	/* background-color: gray; */
+	/* 圆角 */
+	border-radius: 15px;
+	/* 文本居中 */
+	text-align: center;
+}
+/* 鼠标放在下标上的样式 */
+#num-box span:hover{
+	/* 背景色 */
+	background-color: red;
+	/* 文字的颜色 */
+	color: white;
+}
+/* 轮播图的盒子，进行相对定位 */
+#banner-box{
+	position: relative;
+}
+/* 下标的盒子进行绝对定位 */
+#num-box{
+	position: absolute;
+	bottom: 20px;
+	left: 310px;
+}
+
+.red{
+	background-color: red;
+	color: white;
+}
+.gray{
+	background-color: gray;
+	color: white;
+}
+/* 轮播图，左边切换的图片 */
+#banner-left{
+	position: absolute;
+	left: 20px;
+	top: 180px;
+}
+/* 轮播图，右边边切换的图片 */
+#banner-right{
+	position: absolute;
+	right: 20px;
+	top: 180px;
+}
+
+/* 轮播图上面的分类 */
+#main-box .top a{
+	/* 字体颜色 */
+	color: black;
+	/* 去除字体的下划线 */
+	text-decoration: none;
+	/* 右边间隔20px */
+	margin-right: 20px;
+	font-size: 20px;
+}
+#main-box .top a:hover{
+	color: red;
+}
+#main-box .top{
+	/* 右边顶部的盒子，添加下边框，红色实线 */
+	border-bottom: 2px solid red;
+	/* 底部内边距是20px */
+	padding-bottom: 20px;
+}
+
+#main-box .top .type-red{
+	color: red;
+}
+
+
+.w1200{
+	width: 1200px;
+	/* 盒子水平居中 */
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+#all-goof-type{
+	width: 200px;
+	box-sizing: border-box;
+}
+#main-box {
+	width: 980px;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+#mesg-box .mesgtop a{
+	color: gray;
+	text-decoration: none;
+}
+#mesg-box .mesgtop a:hover{
+	color: red;
+}
+
+ /* 快讯*/
+  #kuaixun h2,#kuaixun a{
+	  /* h2,a  编程行内块 */
+	  display: inline-block;
+  }
+  #kuaixun a{
+	  /* a  居右对齐 */
+	  float: right;
+  }
+ 
+  #express a,#express p,.mesgbottom{
+	  color: #888888;
+	  font-size: 12px;
+  }
+  
+  .black{
+	  color: black;
+	  font-weight: bold;
+  }
+  
+  #mesg-box ,#express,.mesgbottom{
+	  background-color: white;
+	  border: 1px solid #d9d9d9;
+  }
+  #mesg-box{
+  	 width: 240px;
+	 position: relative;
+	 top: -8px;
+  }
+  
+  #banner-box{
+	  width: 720px;
+  }
+  #kuaixun,.dashedBottom{
+	  height: 40px;
+	  line-height: 40px;
+	  border-bottom: 1px dashed #d9d9d9;
+	  /* 左右内边距 */
+	  padding: 0  10px;
+  }
+  .mesgbottom p{
+	  /* 左右内边距 */
+	  padding: 10px  10px;
+  }
+  .mesgbottom img{
+	  width: 222px;
+	  padding: 5px;
+  }
+  #express  p{
+	  /* 公告之间的上下间距 */
+	  margin: 10px 0;
+  }
+  
+  #gongao{
+	  /* 公告盒子的告诉 */
+	  height: 130px;
+	  /* 将超出盒子部分隐藏 */
+	  /* 滚动必须要用的属性 */
+	  overflow: hidden;
+  }
+  
+  
+  /* 热卖商品 */
+  #host-sell .right div, #host-sell .right, #host-sell .left{
+	  display: inline-block;
+  }
+  
+  .hot-width{
+	  width: 230px;
+	  text-align: center;
+	  position: relative;
+  }
+  
+  #host-sell .right .one,
+  #host-sell .right  .two,
+  #host-sell .right .three,
+  #host-sell .right .four{
+	  border: 1px solid #eaeaea;
+	  padding: 10px;
+	  box-sizing: border-box;
+	  margin-right: 5px;
+  }
+  
+  .hot-width  H2{
+	  font-size: 16px;
+	  height: 20px;
+	  line-height: 20px;
+	  text-align: center;
+	  color: #555555;
+  }
+  
+.hot-width  p{
+	font-size: 12px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #888888;
+}
+
+.hot-width p .red{
+	font-size: 20px;
+	color: #ff4e00;
+	font-weight: bolder;
+	background-color: white;
+	margin-right: 10px;
+}
+
+#host-sell{
+	margin-top: 20px;
+}
+
+#pricebg{
+	color: white;
+	background-color: #ff4e00;
+	padding: 0 10px;
+}
+/* 第一个热卖商品的背景色 */
+#hot-first{
+	background-color: #d8eefc;
+	padding: 10px;
+	box-sizing: border-box;
+	height: 232px;
+	position: relative;
+	top: -16px;
+}
+
+.hot-img{
+	width: 170px;
+}
+
+
+.hot-logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	z-index: 99;
+}
+
+.hot-img {
+	//动画耗时
+	transition: all 0.5s;
+}
+.hot-img:hover{
+	/* 放大 */
+	transform: scale(1.1,1.1);
+}
+/* 进口 · 生鲜 */
+.leftfloat{
+	float: left;
+}
+
+.inline-block{
+	display: inline-block;
+	font-size: 0;
+}
+/* 进口生鲜 */
+
+#jinkou-box{
+	margin-top: 20px;
+}
+#jinkou-box .top .left{
+	font-size: 18px;
+	color: #ff4e00;
+	height: 40px;
+	line-height: 40px;
+	background: url(images/floor.png) no-repeat;
+}
+#jinkou-box .top .right{
+	float: right;
+}
+#jinkou-box .top .left .floor{
+	
+	color: white;
+	position: relative;
+	left: 4px;
+	font-size: 15px;
+	margin-right: 22px;
+}
+
+.common-a{
+	height: 40px;
+	line-height: 40px;
+	font-size: 12px;
+	color: #555555;
+	text-decoration: none;
+	margin-left: 20px;
+}
+.common-a:hover{
+	color: #FF4E00;
+}
+
+#jinkou-box .top{
+	border-bottom: 2px solid #FF4E00;
+	margin-right: 12px;
+}
+
+
+.jinkou-left{
+	position: relative;
+	font-size: 0;
+}
+
+.jinkou-left .left-img{
+	position: absolute;
+	left: 0;
+	top: 45%;
+}
+.jinkou-left .right-img{
+	position: absolute;
+	right: 0;
+	top: 45%;
+}
+.left-backcolor{
+	background-color: rgb(223 246 231);
+	padding: 18px 0;
+	
+}
+
+.left-backcolor p {
+	/* 底部的虚线 */
+	border-bottom: 1px dotted #555555;
+	padding: 0 10px;
+}
+
+.left-type-hight{
+	height: 30px;
+	line-height: 30px;
+}
+
+.price-red{
+	color: red;
+	font-size: 19px;
+}
+
+.product-div{
+	width: 242px;
+	height: 222px;
+	text-align: center;
+	border-left: 1px solid #EAEAEA;
+	border-bottom: 1px solid #EAEAEA;
+	display: inline-block;
+}
+.product-img{
+	width: 185px;
+	height: 165px;
+	transition: all 0.5s;
+}
+.product-img:hover ,#product-img-div:hover{
+	/* 放大 */
+	transform: scale(1.1,1.1);
+}
+#product-img-div{
+	width: 185px;
+	height: 135px;
+	overflow: hidden;
+	margin: 0 auto;
+	transition: all 0.5s;
+}
+
+
+.product-img-right{
+	width: 248px;
+	height: 223px;
+}
+
+
+
+/* 正品保证 */
+
+#true-box{
+	text-align: center;
+	/* background-color: #B01D1D; */
+	margin-top: 20px;
+}
+#true-box ul li{
+	/* 去除无序列表的黑点 */
+	list-style: none;
+	float: left;
+	width: 280px;
+}
+#true-box ul li img{
+	/* 动画时间 */
+	transition: all 0.5s;
+}
+#true-box ul li img:hover{
+	/* 旋转360度，方法1.2 倍 */
+	transform: rotate(360deg) scale(1.2);
+}
+ 
+
+.clear{
+	clear: both;
+}
+
+.gray-p{
+	color: #555555;
+}
+
+
+/* 底部导航 */
+#foot-nav-box {
+	margin-top: 80px;
+	text-align: center;
+	border-bottom: 1px solid #EAEAEA;
+	padding-bottom: 50px;
+}
+#foot-nav-box .one,
+#foot-nav-box .two,
+#foot-nav-box .three,
+#foot-nav-box .four,
+#foot-nav-box .five,
+#foot-nav-box .six{
+	/* 内容高度不一样，会错乱不齐 */
+	/* display: inline-block; */
+	/* 可以解决错乱补齐 */
+	display: inline;
+	float: left;
+	width: 160px;
+}
+#foot-nav-box div h2{
+	color: #3e3e3e;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+#foot-nav-box div ul li  a{
+	color: #888888;
+	font-size: 12px;
+}
+
+
+#foot-nav-box div ul li  a:hover{
+	color: #FF4E00;
+}
+
+#foot-nav-box .six .left,
+#foot-nav-box .six .right{
+	display: inline-block;
+}
+
+#foot-nav-box .six{
+	width: 350px;
+}
+#foot-nav-box .six .right p{
+	margin-top: 14px;
+	font-size: 12px;
+	color: #888888;
+}
+.weibo-phone img,span{
+	/* 处理img  span 垂直居中 */
+	vertical-align: middle;
+	/* 左边的外边距 */
+	margin-left: 10px;
+}
+#foot-nav-box .six .right #phone{
+	color: #FF4E00;
+	font-size: 18px;
+}
+#foot-box {
+	text-align: center;
+	margin-bottom: 60px;
+}
+#foot-box img{
+	width: 98px;
+	height: 33px;
+	border: 1px solid #D9D9D9;
+	border-radius: 5px;
+}
+
+#foot-box p{
+	color: #999999;
+	font-size: 12px;
+	margin: 20px 0;
+}
+

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>我的一号店</title>
+		<link type="text/css" rel="stylesheet" href="oneshop.css"/>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/oneshop.js"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="head">
+			<div class="left">送货至：广西</div>
+			<div class="right">
+				<span>你好！请</span><a href="login.html" target="_blank">登录</a>
+				<span ><a id="regist" href="regist.html" target="_blank">免费注册</a></span><span class="sub-str">|</span>
+				<span>我的订单</span><span class="sub-str">|</span>
+				<span>收藏夹</span>
+				<div id="kehufuwu">
+					<span>客户服务</span><img src="images/t_arrow.gif" />
+					<div id="kehumebu">
+						<p>客户服务</p>
+						<p>客户服务</p>
+						<p>客户服务</p>
+					</div>
+				</div>
+				<span>网站导航</span><span class="sub-str">|</span>
+				<span>关注我们：</span>
+				<img  src="images/sh1.png"/>
+				<img  src="images/sh2.png"/><span class="sub-str">|</span>
+				<span>手机版</span>
+				<img src="images/s_tel.png" />
+			</div>
+		</div>
+		
+		<!-- 使用div 布局页面 -->
+		<div class="w1200" id="search-logo">
+			<!-- 左边的盒子 -->
+			<div class="left">
+				<!-- logo 的图片 -->
+				<img src="images/logo.png" >
+			</div>
+			<!-- 右边的盒子 -->
+			<div class="right">
+				<input id="search-text" type="text" value="请输入关键字"/>
+				<input id="search-button" type="button"  value="搜索"/>
+				<div id="search-a">
+					<a href="#">咖啡</a>
+					<a href="#">蛋糕</a>
+					<a href="#">html</a>
+					<a href="#">java</a>
+					<a href="#">Bunny</a>
+					<a href="#">学校</a>
+				</div>
+			</div>
+			<!-- 购物车 -->
+			<div id="chart">
+				<img src="images/car.png"/>
+				<span id="cart-span">购车</span>
+				<div id="cart-detail" >
+					<img  src="images/chart.jpg"  >
+				</div>
+				
+			</div>
+		</div>
+	
+		<!-- 全部分类 -->
+		<div class="w1200" id="all-good-type-box">
+			<div id="all-goof-type" class="left">
+				<ul>
+					<li id="all-good-li">全部商品分类</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav1.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+						<div id="second-menu">
+							<img src="images/secondMenu.jpg" >
+						</div>
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav2.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+						<div id="second-menu">
+							<img src="images/secondMenu.jpg" >
+						</div>
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav3.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+						<div id="second-menu">
+							<img src="images/secondMenu.jpg" >
+						</div>
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav4.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav5.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav3.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav4.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav5.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav5.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+					</li>
+					<li class="all-good-item">
+						<img class="img-nav" src="images/nav5.png" />
+						零食、果、巧克力
+						<img class="img-narrow" src="images/n_arrow.gif" />
+					</li>
+				</ul>
+			</div>
+			<!-- 标题内容导航 -->
+			<div id="main-box" class="right">
+				<div class="top">
+					<a class="type-red" href="#">首页</a>
+					<a class="type-red" href="#">一号店</a>
+					<a href="#">母婴</a>
+					<a href="#">女装</a>
+					<a href="#">电脑</a>
+					<a href="#">家访</a>
+					<a href="#">百货</a>
+				</div>
+				<div class="bottom">
+					<div id="banner-box">
+						<img id="banner-left" src="images/b_left.png" />
+						<img id="banner-right" src="images/b_right.png" />
+						<img id="baner-img" src="images/ban1.jpg" width="700px" height="400px" />
+						<div id="num-box">
+							<!-- onmouseover 鼠标移上的方法 -->
+							<!-- continueBanner  鼠标离开的时候调用的方法 -->
+							<span class="red num" onmouseover="changeBanner(0)" onmouseleave="continueBanner()">1</span>
+							<span class="gray num" onmouseover="changeBanner(1)" onmouseleave="continueBanner()">2</span>
+							<span class="gray num" onmouseover="changeBanner(2)" onmouseleave="continueBanner()">3</span>
+						</div>
+					</div>
+					<div id="mesg-box">
+						<div id="express" class="mesgtop">
+							<div id="kuaixun">
+								<h2 class="black">快讯</h2> 
+								<a href="#"> 更多</a>
+							</div>
+							<div id="gongao">
+								    <p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年</a></p>
+									<p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年,很开心</a></p>
+									<p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年,很开心</a></p>
+									<p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年,很开心</a></p>
+									<p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年,很开心</a></p>
+									<p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年,很开心</a></p>
+									<p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年,很开心</a></p>
+									<p><strong class="black">【公告】</strong><a href="#">放假通知，回家过年,很开心</a></p>
+							</div>
+							</div>
+						<div class="mesgbottom">
+							<h2 class="black  dashedBottom">一号钱包</h2>
+							<p>收益日结，收益赚High！</p>
+							<img src="images/oneAD.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- 热卖商品 -->
+		<div class="w1200" id="host-sell">
+			<div id="hot-first" class="left hot-width">
+				<img class="hot-img" src="images/l_img.jpg" />
+				<p>
+					<span id="pricebg" class="red ">￥189</span>
+					<span>26R</span>
+				</p>
+			</div>
+			<div class="right">
+				<div class="one hot-width">
+					<img class="hot-logo" src="images/hot.png" />
+					<img class="hot-img" src="images/hot1.jpg" />
+					<h2>德国进口</h2>
+					<p>德亚全脂纯牛奶200ml*48盒</p>
+					<p>
+						<span class="red">￥189</span>
+						<span>26R</span>
+					</p>
+				</div>
+				<div class="two hot-width">
+					<img class="hot-logo" src="images/hot.png" />
+					<img class="hot-img" src="images/hot2.jpg" />
+					<h2>德国进口</h2>
+					<p>德亚全脂纯牛奶200ml*48盒</p>
+					<p>
+						<span class="red">￥189</span>
+						<span>26R</span>
+					</p>
+				</div>
+				<div class="three hot-width">
+					<img class="hot-logo" src="images/hot.png" />
+					<img class="hot-img" src="images/hot3.jpg" />
+					<h2>德国进口</h2>
+					<p>德亚全脂纯牛奶200ml*48盒</p>
+					<p>
+						<span class="red">￥189</span>
+						<span>26R</span>
+					</p>
+				</div>
+				<div class="four hot-width">
+					<img class="hot-logo" src="images/hot.png" />
+					<img class="hot-img" src="images/hot4.jpg" />
+					<h2>德国进口</h2>
+					<p>德亚全脂纯牛奶200ml*48盒</p>
+					<p>
+						<span class="red">￥189</span>
+						<span>26R</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 广告位 -->
+		<div class="w1200" id="ban-box">
+			<img src="images/mban_2.jpg"  width="1186px">
+		</div>
+		
+		<!-- 进口 · 生鲜 -->
+		<div  class="w1200" id="jinkou-box">
+			<div class="top">
+				<div class="left inline-block">
+					<span class="floor">1F</span> 进口 · 生鲜
+				</div>
+				<div class="right inline-block">
+					<a class="common-a" href="#">进口酒</a>
+					<a class="common-a" href="#">进口母婴</a>
+					<a class="common-a" href="#">新鲜蔬菜</a>
+					<a class="common-a" href="#">新鲜水果</a>
+				</div>
+			</div>
+			<div class="botttom ">
+				<div class="left leftfloat inline-block">
+					<div class="one jinkou-left">
+						<img src="images/fre_r.jpg" >
+						<img class="left-img" src="images/s_left.png" />
+						<img  class="right-img" src="images/s_right.png" />
+					</div>
+					<div class="two left-backcolor">
+						
+						<p>
+							<a class="common-a left-type-hight" href="#">进口水果</a>
+							<a class="common-a left-type-hight"  href="#">奇异果</a>
+							<a class="common-a left-type-hight"  href="#">西柚</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">海鲜水产</a>
+							<a class="common-a left-type-hight"  href="#">品质牛肉</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">奶粉</a>
+							<a class="common-a left-type-hight"  href="#">鲜活禽蛋</a>
+							<a class="common-a left-type-hight"  href="#">进口酒</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">进口奶粉</a>
+							<a class="common-a left-type-hight"  href="#">鲜活禽蛋</a>
+						</p>
+					</div>
+				</div>
+				<div class="middle leftfloat inline-block">
+					<div class="top-p">
+						<div class="one product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/fre_1.jpg" />
+							</div>	
+						</div>
+						<div class="two product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/fre_2.jpg" />
+							</div>	
+						</div>
+						<div class="three product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/fre_3.jpg" />
+							</div>	
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="one product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/fre_4.jpg" />
+							</div>	
+						</div>
+						<div class="two product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/fre_5.jpg" />
+							</div>	
+						</div>
+						<div class="three product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/fre_6.jpg" />
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="right leftfloat inline-block">
+					<div>
+						<img class="product-img-right" src="images/fre_b1.jpg" >
+					</div>
+					<div>
+						<img class="product-img-right" src="images/fre_b2.jpg" >
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!-- 广告位 -->
+		<div class="w1200" id="ban-box">
+			<img src="images/mban_2.jpg"  width="1186px">
+		</div>
+		
+		<!-- 个人美妆 -->
+		<div  class="w1200" id="jinkou-box">
+			<div class="top">
+				<div class="left inline-block">
+					<span class="floor">2F</span> 个人  美妆
+				</div>
+				<div class="right inline-block" >
+					<a class="common-a" href="#">进口酒</a>
+					<a class="common-a" href="#">进口母婴</a>
+					<a class="common-a" href="#">新鲜蔬菜</a>
+					<a class="common-a" href="#">新鲜水果</a>
+				</div>
+			</div>
+			<div class="botttom ">
+				<div class="left leftfloat inline-block">
+					<div class="one jinkou-left">
+						<img src="images/make_r.jpg" width="211px">
+						<img class="left-img" src="images/s_left.png" />
+						<img  class="right-img" src="images/s_right.png" />
+					</div>
+					<div class="two left-backcolor"  style="background-color: rgb(252 231 228);">
+						
+						<p>
+							<a class="common-a left-type-hight" href="#">进口水果</a>
+							<a class="common-a left-type-hight"  href="#">奇异果</a>
+							<a class="common-a left-type-hight"  href="#">西柚</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">海鲜水产</a>
+							<a class="common-a left-type-hight"  href="#">品质牛肉</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">奶粉</a>
+							<a class="common-a left-type-hight"  href="#">鲜活禽蛋</a>
+							<a class="common-a left-type-hight"  href="#">进口酒</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">进口奶粉</a>
+							<a class="common-a left-type-hight"  href="#">鲜活禽蛋</a>
+						</p>
+					</div>
+				</div>
+				<div class="middle leftfloat inline-block">
+					<div class="top-p">
+						<div class="one product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/make_1.jpg" />
+							</div>	
+						</div>
+						<div class="two product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/make_2.jpg" />
+							</div>	
+						</div>
+						<div class="three product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/make_3.jpg" />
+							</div>	
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="one product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/make_4.jpg" />
+							</div>	
+						</div>
+						<div class="two product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/make_5.jpg" />
+							</div>	
+						</div>
+						<div class="three product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/make_6.jpg" />
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="right leftfloat inline-block">
+					<div>
+						<img class="product-img-right" src="images/baby_b1.jpg" >
+					</div>
+					<div>
+						<img class="product-img-right" src="images/baby_b2.jpg" >
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- 广告位 -->
+		<div class="w1200" id="ban-box">
+			<img src="images/mban_2.jpg"  width="1186px">
+		</div>
+		
+		<!-- 母婴 -->
+		<div  class="w1200" id="jinkou-box">
+			<div class="top">
+				<div class="left inline-block">
+					<span class="floor">3F</span> 母婴玩具
+				</div>
+				<div class="right inline-block">
+					<a class="common-a" href="#">进口酒</a>
+					<a class="common-a" href="#">进口母婴</a>
+					<a class="common-a" href="#">新鲜蔬菜</a>
+					<a class="common-a" href="#">新鲜水果</a>
+				</div>
+			</div>
+			<div class="botttom ">
+				<div class="left leftfloat inline-block">
+					<div class="one jinkou-left">
+						<img src="images/baby_r.jpg" >
+						<img class="left-img" src="images/s_left.png" />
+						<img  class="right-img" src="images/s_right.png" />
+					</div>
+					<div class="two left-backcolor" style="background-color: rgb(250 230 239);">
+						
+						<p>
+							<a class="common-a left-type-hight" href="#">进口水果</a>
+							<a class="common-a left-type-hight"  href="#">奇异果</a>
+							<a class="common-a left-type-hight"  href="#">西柚</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">海鲜水产</a>
+							<a class="common-a left-type-hight"  href="#">品质牛肉</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">奶粉</a>
+							<a class="common-a left-type-hight"  href="#">鲜活禽蛋</a>
+							<a class="common-a left-type-hight"  href="#">进口酒</a>
+						</p>
+						<p>
+							<a class="common-a left-type-hight"  href="#">进口奶粉</a>
+							<a class="common-a left-type-hight"  href="#">鲜活禽蛋</a>
+						</p>
+					</div>
+				</div>
+				<div class="middle leftfloat inline-block">
+					<div class="top-p">
+						<div class="one product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/baby_1.jpg" />
+							</div>	
+						</div>
+						<div class="two product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/baby_2.jpg" />
+							</div>	
+						</div>
+						<div class="three product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/baby_3.jpg" />
+							</div>	
+						</div>
+					</div>
+					<div class="bottom">
+						<div class="one product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/baby_4.jpg" />
+							</div>	
+						</div>
+						<div class="two product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/baby_5.jpg" />
+							</div>	
+						</div>
+						<div class="three product-div">
+							<a  class="common-a" href="*">贝思客 草莓先生&蓝莓小姐</a>
+							<h2 class="price-red">￥98.00</h2>
+							<div  id="product-img-div">
+								<img class="product-img" src="images/baby_6.jpg" />
+							</div>	
+						</div>
+					</div>
+				</div>
+				<div class="right leftfloat inline-block">
+					<div>
+						<img class="product-img-right" src="images/baby_b1.jpg" >
+					</div>
+					<div>
+						<img class="product-img-right" src="images/baby_b2.jpg" >
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+		
+		<!-- 正品保障 -->
+		<div class="w1200" id="true-box">
+			<ul>
+				<li>
+					<img src="images/b1.png" >
+					<p>正品保障</p>
+					<p class="gray-p">正品行货 放心购买</p>
+				</li>
+				<li>
+					<img src="images/b2.png" >
+					<p>满50包邮</p>
+					<p class="gray-p">满50包邮-免邮</p>
+				</li>
+				<li>
+					<img src="images/b3.png" >
+					<p>今日特价</p>
+					<p class="gray-p">天天低价 畅选无忧</p>
+				</li>
+				<li>
+					<img src="images/b4.png" >
+					<p>准时送达</p>
+					<p class="gray-p">收货时间由你做主</p>
+				</li>
+				
+			</ul>
+			<div class="clear"></div>
+		</div>
+		
+		<!-- 底部导航 -->
+		<div class="w1200" id="foot-nav-box">
+			<div class="one">
+				<h2><a href="#">新手上路</a></h2>
+				<ul>
+					<li><a href="#">售后流程</a></li>
+					<li><a href="#">购物流程</a></li>
+					<li><a href="#">订购方式</a></li>
+					<li><a href="#">隐私声明</a></li>
+					<li><a href="#">推荐分享说明</a></li>
+				</ul>
+			</div>
+			<div class="two">
+				<h2><a href="#">配送与支付</a></h2>
+				<ul>
+					<li><a href="#">到货付款区域</a></li>
+					<li><a href="#">配送支付查询</a></li>
+					<li><a href="#">支付方式说明</a></li>
+				</ul>
+			</div>
+			<div class="three">
+				<h2><a href="#">服务保证</a></h2>
+				<ul>
+					<li><a href="#">退换货原则</a></li>
+					<li><a href="#">售后服务保证</a></li>
+					<li><a href="#">产品质量保证</a></li>
+				</ul>
+			</div>
+			<div class="four">
+				<h2><a href="#">会员中心</a></h2>
+				<ul>
+					<li><a href="#">资金管理</a></li>
+					<li><a href="#">我的订单</a></li>
+					<li><a href="#">我的足迹</a></li>
+					<li><a href="#">我的收藏</a></li>
+				</ul>
+			</div>
+			<div class="five">
+				<h2><a href="#">联系我们</a></h2>
+				<ul>
+					<li><a href="#">购物查询</a></li>
+					<li><a href="#">投诉与建议</a></li>
+					<li><a href="#">网站故障保证</a></li>
+				</ul>
+			</div>
+			<div class="six">
+				<div class="left">
+					<p>
+						<img src="images/er.gif" />
+					</p>
+					<p>
+						<img src="images/ss.png" />
+					</p>
+				</div>
+				<div class="right">
+					<p class="weibo-phone"><img src="images/b_sh_1.png" ><span>新浪微博</span></p>
+					<p class="weibo-phone" ><img src="images/b_sh_2.png" ><span>腾讯微博</span></p>
+					<p>服务热线:</p>
+					<p id="phone">400-123-4567</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	
+		<div class="w1200" id="foot-box">
+			<p>备案/许可证编号：蜀ICP备12009302号-1-www.dingguagua.com Copyright© 1号店网上超市 2007-2016，All Rights Reserved. 复制必究 , Technical Support: Dgg Group</p>
+			<div>
+				<img src="images/b_1.gif" >
+				<img src="images/b_2.gif" >
+				<img src="images/b_3.gif" >
+				<img src="images/b_4.gif" >
+				<img src="images/b_5.gif" >
+				<img src="images/b_6.gif" >
+			</div>
+		</div>
+			
+	</body>
+</html>

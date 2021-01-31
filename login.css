@@ -1,0 +1,193 @@
+*{
+	font-size: 14px;
+	color: #999999;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+}
+body{
+	background-color: rgb(251 251 251);
+}
+.clear{
+	clear: both;
+}
+
+
+#head .left,#head .right{
+	display: inline-block;
+}
+#head .right{
+	float: right;
+}
+
+#head {
+	padding: 20px 100px;
+	/* 盒子的阴影   x轴的偏移量   y 轴的偏移量    阴影的模糊度   阴影的颜色 */
+	 box-shadow: 0px 0px 10px #ccc;
+	 background-color: white;
+}
+
+#help-center{
+	display: inline-block;
+	border: 1px solid #999999;
+	background-color: whitesmoke;
+	width: 100px;
+	height: 30px;
+	line-height: 30px;
+	margin-left: 10px;
+}
+#help-center  img ,#help-center span{
+	vertical-align: middle;
+}
+#please-login{
+	color: #06c;
+	text-decoration: none;
+}
+
+#context .left,#context .right{
+	display: inline-block;
+}
+#main{
+	text-align: center;
+	/* background-color: rgb(251 251 251); */
+	padding-top: 20px;
+}
+
+/* 输入框的样式 */
+.input-style{
+	display: inline-block;
+	width: 290px;
+	height: 45px;
+	line-height: 45px;
+	border: 0;
+	margin-top: 10px;
+	padding-left: 20px;
+	/* 去除文本框，默认选中蓝色的先 */
+	outline: none;
+}
+/* 输入框div  样式 */
+.input-style-div{
+	border: 1px solid #dedede;
+	background-color: white;
+	padding-left: 15px;
+	margin-top: 10px;
+}
+/* img  input  垂直居中 */
+.input-style-div img,.input-style-div input{
+	vertical-align: middle;
+}
+/* 登录按钮*/
+#loginbutoon{
+	background-color: #ff3c3c;
+	color: white;
+	width: 360px;
+	height: 55px;
+	border: 1px solid #ff7373;
+	font-size: 16px;
+	margin-top: 10px;
+}
+
+.img-f{
+	width: 35px;
+	height: 35px;
+	margin-right: 20px;
+}
+#all-f{
+	margin-top: 10px;
+	text-align: left;
+}
+#loadMore{
+	width: 18px;
+	height: 14px;
+}
+
+#all-f img ,#all-f span{
+	vertical-align: middle;
+}
+#all-f span{
+	float: right;
+	position: relative;
+	top: 5px;
+}
+
+#loginspan{
+	float: left;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#regisspan{
+	float: right;
+	color: #0066CC;
+}
+#autologin{
+	float: left;
+}
+
+#nopass{
+	float: right;
+}
+#autologinnopass{
+	margin-top: 10px;
+}
+
+.moreweb{
+	float: left;
+	margin-top: 10px;
+}
+
+.a-img{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	margin-right: 20px;
+}
+/* nth-of-type(1)  同一个名字a-img  第一个元素/标签 */
+.a-img:nth-of-type(1){
+	background-image: url(images/qqf.png);
+	background-size: 100% 100%;
+}
+.a-img:nth-of-type(1):hover{
+	background-image: url(images/qqt.png);
+}
+
+
+.a-img:nth-of-type(2){
+	background-image: url(images/wbf.png);
+	background-size: 100% 100%;
+}
+.a-img:nth-of-type(2):hover{
+	background-image: url(images/wbt.png);
+}
+
+.a-img:nth-of-type(3){
+	background-image: url(images/zhif.png);
+	background-size: 100% 100%;
+}
+.a-img:nth-of-type(3):hover{
+	background-image: url(images/zhit.png);
+}
+
+
+.a-img:nth-of-type(4){
+	background-image: url(images/wxf.png);
+	background-size: 100% 100%;
+}
+.a-img:nth-of-type(4):hover{
+	background-image: url(images/wxt.png);
+}
+
+#foot p{
+	font-size: 12px;
+	color: #333333;
+	margin-top: 20px;
+	
+}
+
+#foot{
+	width: 1200px;
+	position: absolute;
+	bottom: 30px;
+	text-align: center;
+	margin: 0 auto;
+}
